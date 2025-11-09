@@ -12,6 +12,7 @@ class LinkedList {
         this.length = 0;
     }
 
+    //* O(1)
     append(value) {
         const newNode = new Node(value);
 
@@ -30,6 +31,7 @@ class LinkedList {
         return this;
     }
 
+    //* O(1)
     prepend(value) {
         const newNode = new Node(value);
 
@@ -49,6 +51,8 @@ class LinkedList {
         return this;
     }
 
+    //* best case = O(1)
+    //* worst case = O(n)
     insert(index, value) {
         if (index < 0 || index > this.length) {
             console.error('Index is the out of the bound');
@@ -75,6 +79,8 @@ class LinkedList {
         newNode.next = holdingNode;
     }
 
+    //* best case = O(1)
+    //* worst case = O(n)
     remove(index) {
         if (index < 0 || index >= this.length) {
             console.error('Index is the out of the bound');
@@ -117,6 +123,7 @@ class LinkedList {
         let currentNode = this.head;
         let count = 0;
 
+        //* O(n)
         while (count !== index) {
             currentNode = currentNode.next;
             count++;
