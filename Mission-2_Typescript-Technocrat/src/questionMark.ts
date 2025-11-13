@@ -49,5 +49,5 @@ const user: {
     }
 };
 
-const userPostalCode = user?.other?.address?.postalCode
+const userPostalCode = user?.other?.address?.postalCode;
 console.log(userPostalCode)
