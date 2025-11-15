@@ -1,4 +1,5 @@
 //* We can use constraint to strictly define the types. Which property or value must be needed.
+//* We can use extends to set constraint
 
 type Student = {id: number, name: string, dateOfBirth: string}
 
