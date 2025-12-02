@@ -1,2 +1,7 @@
 import { add } from "./add.mjs";
-import subs from "./subs.mjs";
+import minus from "./subs.mjs";
+
+export default {
+    add,
+    minus
+};

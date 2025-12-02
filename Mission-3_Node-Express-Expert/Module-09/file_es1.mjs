@@ -1,8 +1,10 @@
 // common js to esm
 import { a } from "./file_es2.mjs";
 import { a as x } from "./file_es3.mjs";
-import {} from "./utils_esm/index.mjs"
+import utils from "./utils_esm/index.mjs"
 
+console.log(utils.add(9, 13));
+console.log(utils.minus(x, a));
 console.log(a, x);
 
 
